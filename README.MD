@@ -2,7 +2,15 @@
 > Timeout for next.
 
 
-## resources:
+## usage:
+```js
+import 'next-timeout';
 
-## todos:
-- [ ] unit test case
+// create timeout resource:
+var res = nx.timeout(()=>{
+  console.log('delay 1s')
+},1000);
+
+// destroy resource:
+res.destroy();
+```
